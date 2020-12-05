@@ -3,20 +3,14 @@ var MessagesView = {
   $chats: $('#chats'),
 
   initialize: function() {
+    Messages.getMessages();
   },
 
   render: function() {
   },
 
-  testMessage: {
-    text: 'got you',
-    username: 'errol',
-    roomname: 'best room'
-  },
-
-  renderMessage: function() {
-    // MessagesView.$chats.append('<div></div>');
-    MessagesView.$chats.append(MessageView.render(MessagesView.testMessage));
+  renderMessage: function(message) {
+    MessagesView.$chats.append(MessageView.render(message));
   }
 
 };
