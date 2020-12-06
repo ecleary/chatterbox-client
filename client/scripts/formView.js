@@ -9,8 +9,9 @@ var FormView = {
   handleSubmit: function(event) {
     // Stop the browser from submitting the form
     event.preventDefault();
-    
+
     console.log('click!');
+    console.log($('#message').data()); // need to figure out the right jquery method to pull the text input
   },
 
   setStatus: function(active) {

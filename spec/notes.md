@@ -2,7 +2,7 @@
 
 [] Parse.create success cb and error cb will likely need to be customized
 [] renderMessage does not currently refer to message input param (messagesView.js)
-[]
+[] need to figure out the right jquery method to pull the text input (formView.js)
 
 ### MODELS (all currently empty objects)
 * messages.js
